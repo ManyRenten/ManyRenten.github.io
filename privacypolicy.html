@@ -22,6 +22,37 @@
             overflow-x: hidden;
         }
 
+        /* Navigation */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .nav-button {
+            color: white;
+            text-decoration: none;
+            font-size: 2rem;
+            transition: transform 0.3s ease, text-shadow 0.3s ease;
+            padding: 10px 20px;
+        }
+
+        .nav-button:hover {
+            transform: scale(1.1);
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+        }
+
+        /* Content */
         .content-page {
             padding-top: 120px;
             max-width: 900px;
@@ -69,6 +100,7 @@
             <a href="contact.html" class="nav-button">Contact me</a>
         </div>
     </nav>
+
     <main class="content-page">
         <h1 class="page-title">Privacy Policy</h1>
 
@@ -83,7 +115,7 @@
                 <li>Your email address</li>
                 <li>The subject of your message</li>
                 <li>The message content</li>
-                <li>Your preference regarding whether your message and name may be used in a YouTube video (via the checkbox on the form)</li>
+                <li>Your preference regarding whether your message and name may be used in a YouTube video</li>
             </ul>
 
             <h2>How Your Information Is Used</h2>
@@ -91,44 +123,42 @@
             <ul>
                 <li>To read and respond to your message</li>
                 <li>To follow up on your message if needed</li>
-                <li><strong>If you give permission via the checkbox:</strong> I may show your message and the name you provided in a YouTube video (for example, in a Q&amp;A)</li>
-                <li><strong>If you do not give permission:</strong> Your message and name will not be used in any video</li>
+                <li><strong>If you give permission:</strong> I may show your message and name in a YouTube video</li>
+                <li><strong>If you do not give permission:</strong> Your message and name will not be used publicly</li>
             </ul>
-            <p>Your email address will <strong>never</strong> be shown publicly.</p>
 
             <h2>How Your Information Is Processed</h2>
-            <p>Form submissions are handled by <strong>Formspree</strong>, a third‑party service that processes and forwards your message to me. You can read Formspree’s privacy policy here:</p>
+            <p>Form submissions are handled by <strong>Formspree</strong>, a third‑party service. Their policy:</p>
             <p><a href="https://formspree.io/legal/privacy-policy/" target="_blank">Formspree Privacy Policy</a></p>
 
-            <p>This form also uses <strong>Google reCAPTCHA</strong>, which helps prevent spam. reCAPTCHA is provided on Formspree’s end, and its use is subject to Google’s policies:</p>
+            <p>This form also uses <strong>Google reCAPTCHA</strong> to prevent spam. Its use is governed by:</p>
             <ul>
                 <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
                 <li><a href="https://policies.google.com/terms" target="_blank">Google Terms of Service</a></li>
             </ul>
 
             <h2>YouTube Embeds</h2>
-            <p>Some pages on this website include embedded YouTube videos. YouTube may collect data such as your IP address, device information, and viewing behavior. Use of YouTube embeds is governed by Google’s policies:</p>
+            <p>Some pages include embedded YouTube videos. YouTube may collect data such as IP address, device info, and viewing behavior. YouTube services are governed by:</p>
             <ul>
                 <li><a href="https://policies.google.com/privacy" target="_blank">YouTube / Google Privacy Policy</a></li>
                 <li><a href="https://www.youtube.com/t/terms" target="_blank">YouTube Terms of Service</a></li>
             </ul>
 
             <h2>Data Retention</h2>
-            <p>Messages you send may be stored in my email inbox for as long as needed to respond or maintain conversation history. If you request deletion of your message, I will delete it from my records.</p>
+            <p>Messages may be stored in my email inbox as needed. You may request deletion at any time.</p>
 
             <h2>Your Choices and Rights</h2>
-            <p>You may:</p>
             <ul>
                 <li>Choose not to submit the form</li>
-                <li>Request that I delete your previous messages</li>
-                <li>Decline permission for your message and name to appear in videos (by leaving the checkbox unchecked)</li>
+                <li>Request deletion of your messages</li>
+                <li>Decline permission for video use</li>
             </ul>
 
             <h2>Cookies and Tracking</h2>
-            <p>This website does not use cookies or analytics tools. Formspree, Google reCAPTCHA, and YouTube may collect technical information as part of their normal operation.</p>
+            <p>This site does not use cookies or analytics. Formspree, reCAPTCHA, and YouTube may collect technical data as part of their normal operation.</p>
 
             <h2>Contact</h2>
-            <p>If you have questions about this privacy policy or want your data removed, you can contact me through the same form or at:<br>
+            <p>If you have questions or want your data removed, contact me through the form or at:<br>
             <strong>[add email address here]</strong></p>
 
         </div>
