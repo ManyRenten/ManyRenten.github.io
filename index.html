@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="https://cdn.kiritoasty.net/renten_pfp.webp">
+    <link rel="stylesheet" href="https://cdn.kiritoasty.net/KiritoastysBadComicPort.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bad Comic', sans-serif;
+    background: linear-gradient(to bottom, #c67315 0%, #f5a623 50%, #c67315 100%);
+    min-height: 100vh;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    padding: 10px 20px;
+}
+
+.nav-button:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 100px;
+}
+
+.banner-text {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 40px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    max-width: 800px;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.banner-text p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.character-container {
+    position: relative;
+    z-index: 10;
+}
+
+.character {
+    max-width: 400px;
+    height: auto;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+/* Stars */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20% 30%, white, transparent),
+        radial-gradient(2px 2px at 60% 70%, white, transparent),
+        radial-gradient(1px 1px at 50% 50%, white, transparent),
+        radial-gradient(1px 1px at 80% 10%, white, transparent),
+        radial-gradient(2px 2px at 90% 60%, white, transparent),
+        radial-gradient(1px 1px at 33% 80%, white, transparent),
+        radial-gradient(2px 2px at 15% 60%, white, transparent);
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Star sparkles */
+.star {
+    position: absolute;
+    background: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: twinkle 2s infinite;
+}
+
+.star-1 { width: 60px; height: 60px; top: 20%; left: 15%; animation-delay: 0s; }
+.star-2 { width: 40px; height: 40px; top: 30%; left: 30%; animation-delay: 0.5s; }
+.star-3 { width: 50px; height: 50px; top: 25%; left: 45%; animation-delay: 1s; }
+.star-4 { width: 70px; height: 70px; top: 20%; right: 20%; animation-delay: 0.3s; }
+.star-5 { width: 45px; height: 45px; top: 35%; right: 30%; animation-delay: 0.8s; }
+.star-6 { width: 35px; height: 35px; top: 40%; right: 15%; animation-delay: 1.2s; }
+
+@keyframes twinkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 20px;
+    }
+    
+    .nav-button {
+        font-size: 1.5rem;
+    }
+    
+    .banner-text {
+        margin: 0 20px 30px 20px;
+        padding: 15px 25px;
+    }
+    
+    .banner-text p {
+        font-size: 1.2rem;
+    }
+    
+    .character {
+        max-width: 300px;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="videos.html" class="nav-button">Videos</a>
+            <a href="blog.html" class="nav-button">Blog</a>
+            <a href="about.html" class="nav-button">About</a>
+            <a href="contact.html" class="nav-button">Contact me</a>
+        </div>
+    </nav>
+
+    <main class="hero-section">
+        <div class="banner-text">
+            <p>Welcome to RentenWeb. Here you can find my blog, favorite videos, and more soon to come.</p>
+        </div>
+        <div class="character-container">
+            <img src="https://cdn.kiritoasty.net/renten_banner.png" alt="Character" class="character">
+        </div>
+    </main>
+</body>
+</html>
+
+        </div>
+    </main>
+</body>
+</html>

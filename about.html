@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/png" href="https://cdn.kiritoasty.net/renten_pfp.webp">
+    <link rel="stylesheet" href="https://cdn.kiritoasty.net/KiritoastysBadComicPort.css">
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bad Comic', sans-serif;
+    background: linear-gradient(to bottom, #c67315 0%, #f5a623 50%, #c67315 100%);
+    min-height: 100vh;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    padding: 10px 20px;
+}
+
+.nav-button:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+/* Stars */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20% 30%, white, transparent),
+        radial-gradient(2px 2px at 60% 70%, white, transparent),
+        radial-gradient(1px 1px at 50% 50%, white, transparent),
+        radial-gradient(1px 1px at 80% 10%, white, transparent),
+        radial-gradient(2px 2px at 90% 60%, white, transparent),
+        radial-gradient(1px 1px at 33% 80%, white, transparent),
+        radial-gradient(2px 2px at 15% 60%, white, transparent);
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Star sparkles */
+.star {
+    position: absolute;
+    background: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: twinkle 2s infinite;
+}
+
+.star-1 { width: 60px; height: 60px; top: 20%; left: 15%; animation-delay: 0s; }
+.star-2 { width: 40px; height: 40px; top: 30%; left: 30%; animation-delay: 0.5s; }
+.star-3 { width: 50px; height: 50px; top: 25%; left: 45%; animation-delay: 1s; }
+.star-4 { width: 70px; height: 70px; top: 20%; right: 20%; animation-delay: 0.3s; }
+.star-5 { width: 45px; height: 45px; top: 35%; right: 30%; animation-delay: 0.8s; }
+.star-6 { width: 35px; height: 35px; top: 40%; right: 15%; animation-delay: 1.2s; }
+
+@keyframes twinkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+/* Content Pages */
+.content-page {
+    padding-top: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+}
+
+.page-title {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.page-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    line-height: 1.8;
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 20px;
+    }
+    
+    .nav-button {
+        font-size: 1.5rem;
+    }
+    
+    .page-title {
+        font-size: 2rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="videos.html" class="nav-button">Videos</a>
+            <a href="blog.html" class="nav-button">Blog</a>
+            <a href="about.html" class="nav-button">About</a>
+            <a href="contact.html" class="nav-button">Contact me</a>
+        </div>
+    </nav>
+
+    <div class="star star-1"></div>
+    <div class="star star-2"></div>
+    <div class="star star-3"></div>
+    <div class="star star-4"></div>
+    <div class="star star-5"></div>
+    <div class="star star-6"></div>
+
+    <main class="content-page">
+        <h1 class="page-title">Howdy!</h1>
+        
+        <div class="page-content">
+            <h2>I'm ManyRenten, an Indie YouTuber, Unpublished Author, and Aspiring Dev.</h2>
+            <br>
+            <p>I'm a small content creator that doesn't focus on being heard, but instead in enjoying the creative process and the finished product, even if no one sees it but me.</p>
+            
+            <p>I created my first YouTube channel in late December of 2024, and since then have made another, which is my current YouTube channel named "ManyRenten". The inspiration behind creating my channel came from my two internet friends KiriToasty and Phi, of which I admired their editing styles greatly.</p>
+            <p>The backstory behind the name "ManyRenten" comes from when I created my first Roblox account on 12/28/2015. I wanted the username "Renten" but it was taken, and the sign up form suggested adding "Many" before the name. I've used that username ever since.</p>
+            <p>My first ever public YouTube video was titled "Currently Moving Cable Car", which was a bug I found on the Roblox game "Oaklands" at the time. It got around 19 views, of which most were me. Sadly I unlisted the video and later deleted it. R.I.P. first video.</p>
+            <br>
+            <p>My favorite hobbies are writing, coding, music creation, and drawing. These don't really get included in videos as I prefer to keep them separate from my channel, although they might be included in the future.</p>
+            <p>I don't have any public examples, but I've created some random tools (a self hosted website using flask and python to transfer files between devices), writing random songs and parodies for fun, drawing (I'm still learning lol), and writing random fictional short stories, novels, and skits.</p>
+            <br>
+            <p>I am a born again Christian and believe that Jesus is the Son of God, and that He came to Earth, died, was buried, and rose again the third day. Knowing my strength comes from Jesus alone helps me work and think better, along with giving me the motivation to keep going.</p>
+            <br>
+            <p>To whoever is reading this: I want them to know that you should never compare yourself to anyone else, and always believe in yourself. It's easy to lose track of what is important, and it's crucial that you don't focus on being someone you aren't.</p>
+            <br>
+            <p>My Github profile icon and the icon on my website's main page are drawn by KiriToasty. Image cdn also generously provided by KiriToasty. Thanks for the help, man.</p>
+            <br>
+            <p>Thank you for reading, I hope you have a blessed day. -ManyRenten (last edited 2/8/2026)</p>
+        </div>
+    </main>
+</body>
+</html>
