@@ -216,30 +216,45 @@ body::before {
             <p style="text-align: center; margin-bottom: 30px;">Have a comment or want to get in touch? Fill out the form below!</p>
             
             <form class="contact-form" action="https://formspree.io/f/xwvnpkvz" method="POST">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                </div>
-                
-                <div style="text-align: center;">
-                    <button type="submit" class="submit-button">Send Message</button>
-                </div>
-            </form>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+
+    <!-- Optional permission checkbox -->
+    <div class="form-group">
+        <label style="display: flex; align-items: center; gap: 10px;">
+            <input type="checkbox" name="allow_video_use" value="yes" style="width: auto;">
+            I allow my message and provided name to be used in a YouTube video.
+        </label>
+    </div>
+
+    <!-- Privacy policy notice -->
+    <p style="font-size: 0.9rem; opacity: 0.9; margin-bottom: 20px; text-align: center;">
+        By clicking submit, you agree to the terms described in the
+        <a href="privacypolicy.html" style="color: #f5a623;">Privacy Policy</a>.
+    </p>
+    
+    <div style="text-align: center;">
+        <button type="submit" class="submit-button">Send Message</button>
+    </div>
+</form>
+
             
             <p style="text-align: center; margin-top: 30px; font-size: 0.9rem; opacity: 0.8;">
                 Note: To make this form functional, <a href="https://formspree.io" target="_blank" style="color: #f5a623;">Formspree</a> was used. All information collected is solely used to contact you and is deleted after.
